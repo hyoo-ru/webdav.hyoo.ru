@@ -18,7 +18,7 @@ jobs:
     - name: Build app
       uses: hyoo-ru/mam_build@master
       with:
-        module: 'hyoo/files/demo'
+        module: 'hyoo/webdav/demo'
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/master'
