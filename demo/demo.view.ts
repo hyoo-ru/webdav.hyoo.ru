@@ -1,6 +1,6 @@
 namespace $.$$ {
 
-	export class $mol_app_files_demo extends $.$mol_app_files_demo {
+	export class $hyoo_webdav_demo extends $.$hyoo_webdav_demo {
 
 		render() {
 			// Ensure for webdav resource are created at server

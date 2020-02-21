@@ -1,6 +1,6 @@
 namespace $.$$ {
 
-	export class $mol_app_files extends $.$mol_app_files {
+	export class $hyoo_webdav extends $.$hyoo_webdav {
 		
 		pages() {
 			return this.webdavs().map( ( webdav ) => ( this.webdav_type( webdav.uri() ) === 'dir' )
@@ -120,7 +120,7 @@ namespace $.$$ {
 		
 	}
 
-	export class $mol_app_files_folder extends $.$mol_app_files_folder {
+	export class $hyoo_webdav_folder extends $.$hyoo_webdav_folder {
 		
 		body() {
 			return [

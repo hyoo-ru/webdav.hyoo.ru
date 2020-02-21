@@ -1,11 +1,11 @@
-$mol_app_files $mol_book
+$hyoo_webdav $mol_book
 	uri_current <= uri_root <= uri_root_default \
 	credentials *
 		login \
 		password \
 	title <= title_root @ \Documents
 	-
-	Folder!folder $mol_app_files_folder
+	Folder!folder $hyoo_webdav_folder
 		title <= webdav_title!folder \
 		description <= webdav_description!folder \
 		tools <= page_tools!folder
@@ -27,7 +27,7 @@ $mol_app_files $mol_book
 						sub /
 							<= folder_row_title!uri \
 	-
-	File!file $mol_app_files_file
+	File!file $hyoo_webdav_file
 		title <= webdav_title!file
 		tools <= page_tools!file
 		src <= file_uri!file \
@@ -48,7 +48,7 @@ $mol_app_files $mol_book
 				<= Close_icon!uri $mol_icon_cross
 			arg <= close_arg!uri *
 
-$mol_app_files_folder $mol_page
+$hyoo_webdav_folder $mol_page
 	minimal_width 400
 	body /
 		<= Description $mol_text
@@ -56,7 +56,7 @@ $mol_app_files_folder $mol_page
 		<= Folder_rows $mol_list
 			rows <= rows /
 
-$mol_app_files_file $mol_page
+$hyoo_webdav_file $mol_page
 	minimal_width 800
 	body /
 		<= Embed $mol_embed
