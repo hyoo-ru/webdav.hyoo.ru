@@ -1,9 +1,9 @@
 $hyoo_webdav $mol_book
-	uri_current <= uri_root <= uri_root_default \
+	uri_current <= uri_root <= uri_root_default \http://ajaxexplorer.com/User5df12c6/
 	credentials *
 		login \
 		password \
-	title <= title_root @ \Documents
+	title <= title_root @ \WebDAV client
 	-
 	Folder!folder $hyoo_webdav_folder
 		title <= webdav_title!folder \

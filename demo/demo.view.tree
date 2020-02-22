@@ -1,5 +1,0 @@
-$hyoo_webdav_demo $mol_view
-	sub /
-		<= App $hyoo_webdav
-			title_root <= title @ \WebDAV client
-			uri_root_default <= uri_root \http://ajaxexplorer.com/User5df12c6/

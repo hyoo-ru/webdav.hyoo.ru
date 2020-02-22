@@ -1,6 +1,11 @@
 namespace $.$$ {
 
 	export class $hyoo_webdav extends $.$hyoo_webdav {
+		render() {
+			// Ensure for webdav resource are created at server
+			$mol_http.resource( this.uri_root() ).text()
+			return super.render()
+		}
 		
 		pages() {
 			return this.webdavs().map( ( webdav ) => ( this.webdav_type( webdav.uri() ) === 'dir' )
