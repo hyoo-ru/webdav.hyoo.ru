@@ -2144,8 +2144,8 @@ var $;
             this.focused([event.target]);
         }
         static blur(event) {
-            const element = $.$mol_mem_cached(() => this.focused())[0];
-            if (element === event.target)
+            const elements = $.$mol_mem_cached(() => this.focused());
+            if (elements && elements[0] === event.target)
                 this.focused([]);
         }
     }
@@ -5116,7 +5116,7 @@ var $;
     var $$;
     (function ($$) {
         class $mol_check extends $.$mol_check {
-            event_click(next) {
+            click(next) {
                 this.checked(!this.checked());
                 if (next)
                     next.preventDefault();
