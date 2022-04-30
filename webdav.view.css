@@ -53,7 +53,7 @@
 	align-self: stretch;
 	flex: 1 1 auto;
 	box-shadow: 0 0 0 1px var(--mol_theme_line);
-	border-radius: var(--mol_skin_round);
+	border-radius: var(--mol_gap_round);
 }
 
 [hyoo_webdav_file_body] {
