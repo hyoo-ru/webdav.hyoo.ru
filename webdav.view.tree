@@ -59,6 +59,6 @@ $hyoo_webdav_folder $mol_page
 $hyoo_webdav_file $mol_page
 	minimal_width 800
 	body /
-		<= Embed $mol_embed
+		<= Embed $mol_embed_any
 			uri <= src \
 			mime <= mime \
