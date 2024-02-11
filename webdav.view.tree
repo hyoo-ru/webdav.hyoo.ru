@@ -50,6 +50,7 @@ $hyoo_webdav $mol_book
 
 $hyoo_webdav_folder $mol_page
 	minimal_width 400
+	event * click?val <=> event_top?val null
 	body /
 		<= Description $mol_text
 			text <= description \
@@ -58,7 +59,8 @@ $hyoo_webdav_folder $mol_page
 
 $hyoo_webdav_file $mol_page
 	minimal_width 800
+	event * click?val <=> event_top?val null
 	body /
-		<= Embed $mol_embed_any
+		<= Embed $mol_embed_native
 			uri <= src \
 			mime <= mime \
