@@ -87,7 +87,7 @@ namespace $.$$ {
 		}
 		
 		folder_row_title( uri : string ) {
-			return this.webdav( uri ).prop( 'displayname' )
+			return this.webdav( uri )?.prop( 'displayname' ) ?? ''
 		}
 		
 		folder_row_descr( uri : string ) {
@@ -102,7 +102,7 @@ namespace $.$$ {
 		}
 		
 		file_mime( uri : string ) {
-			return this.webdav( uri ).prop( 'getcontenttype' )
+			return this.webdav( uri )?.prop( 'getcontenttype' ) ?? ''
 		}
 		
 		file_size( uri : string ) {
