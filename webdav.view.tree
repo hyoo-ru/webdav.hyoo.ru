@@ -45,7 +45,7 @@ $hyoo_webdav $mol_book
 	page_tools!uri /
 		<= Close!uri $mol_link
 			sub /
-				<= Close_icon!uri $mol_icon_cross
+				<= Close_icon!uri $mol_icon_close
 			arg <= close_arg!uri *
 
 $hyoo_webdav_folder $mol_page
